@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0119.2058                               -->
+<workbook original-version='18.1' source-build='2019.4.2 (20194.20.0119.2058)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='flights (flights)' inline='true' name='federated.0rl8ho30jaxgi00zvotbw0a8swq1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='127.0.0.1' name='mysql.07fia340rg6vf91cw95ze10ghdfz'>
+            <connection class='mysql' dbname='flights' odbc-native-protocol='' one-time-sql='' port='3306' server='127.0.0.1' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.07fia340rg6vf91cw95ze10ghdfz' name='flights' table='[flights]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dep_time</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dep_time]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dep_time</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dep_delay</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dep_delay]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dep_delay</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arr_time</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arr_time]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>arr_time</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arr_delay</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arr_delay]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>arr_delay</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carrier</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[carrier]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>carrier</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tailnum</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tailnum]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>tailnum</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>6</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flight</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[flight]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>flight</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origin</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[origin]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>origin</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dest</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dest]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dest</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>air_time</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[air_time]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>air_time</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[distance]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[hour]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>hour</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minute</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[minute]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>minute</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Air Time' datatype='integer' name='[air_time]' role='measure' type='quantitative' />
+      <column caption='Arr Delay' datatype='integer' name='[arr_delay]' role='measure' type='quantitative' />
+      <column caption='Arr Time' datatype='integer' name='[arr_time]' role='measure' type='quantitative' />
+      <column caption='Carrier' datatype='string' name='[carrier]' role='dimension' type='nominal' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column caption='Dep Delay' datatype='integer' name='[dep_delay]' role='measure' type='quantitative' />
+      <column caption='Dep Time' datatype='integer' name='[dep_time]' role='measure' type='quantitative' />
+      <column caption='Dest' datatype='string' name='[dest]' role='dimension' type='nominal' />
+      <column caption='Distance' datatype='integer' name='[distance]' role='measure' type='quantitative' />
+      <column caption='Flight' datatype='integer' name='[flight]' role='measure' type='quantitative' />
+      <column caption='Hour' datatype='integer' name='[hour]' role='measure' type='quantitative' />
+      <column caption='Minute' datatype='integer' name='[minute]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+      <column caption='Tailnum' datatype='string' name='[tailnum]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.459698' measure-ordering='alphabetic' measure-percentage='0.540302' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flights (flights)' name='federated.0rl8ho30jaxgi00zvotbw0a8swq1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rl8ho30jaxgi00zvotbw0a8swq1'>
+            <column caption='Air Time' datatype='integer' name='[air_time]' role='measure' type='quantitative' />
+            <column-instance column='[tailnum]' derivation='None' name='[none:tailnum:nk]' pivot='key' type='nominal' />
+            <column-instance column='[air_time]' derivation='Sum' name='[sum:air_time:qk]' pivot='key' type='quantitative' />
+            <column caption='Tailnum' datatype='string' name='[tailnum]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0rl8ho30jaxgi00zvotbw0a8swq1].[sum:air_time:qk]</rows>
+        <cols>[federated.0rl8ho30jaxgi00zvotbw0a8swq1].[none:tailnum:nk]</cols>
+      </table>
+      <simple-id uuid='{039E1BC1-BF97-48C6-8570-20702EDC539B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rl8ho30jaxgi00zvotbw0a8swq1].[none:origin:nk]</field>
+            <field>[federated.0rl8ho30jaxgi00zvotbw0a8swq1].[none:tailnum:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E6673CDA-4204-4FBD-B90A-6A053B2E124F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
